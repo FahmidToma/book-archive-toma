@@ -8,7 +8,7 @@ const searchBook = () =>{
     searchBoi.value = '';
 
     //making the search url dynamic
-    const searchUrl = `http://openlibrary.org/search.json?q=${searchText}`;
+    const searchUrl = `https://openlibrary.org/search.json?q=${searchText}`;
     //getting search result
     fetch(searchUrl)
     .then(response => response.json())
